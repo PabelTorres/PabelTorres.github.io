@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pavito Cósmico - Portafolio</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/6152bc4d0e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body onload="closemenu()">
+    <!-- ------Header------ -->
+    <div id="header-2">
+      <div class="container">
+        <nav>
+          <a id="logo" href="../pages/index.html">
+            <img
+              src="../assets/images/Logo/Logo.png"
+              class="logo"
+              alt="Logo de Pabel Hughes"
+            />
+          </a>
+          <ul id="sidemenu">
+            <li><a href="../pages/index.html">Principal</a></li>
+            <li><a href="../pages/index.html#sobre-mi">Sobre mi</a></li>
+            <li><a href="../pages/index.html#servicios">Servicios</a></li>
+            <li><a href="../pages/index.html#portafolio">Portafolio</a></li>
+            <li><a href="../pages/index.html#contacto">Contacto</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+      </div>
+    </div>
+    <!-- ------Carousel------ -->
+    <div class="carousel">
+      <!-- ------List Item------ -->
+      <div class="list">
+        <div class="item">
+          <img
+            src="../assets/images/projects/pavito cosmico/01.jpg"
+            alt="Imagen de Pavito-cósmico - 01"
+          />
+          <div class="content">
+            <div class="author">PABEL TORRES HUGHES</div>
+            <div class="title">Pavito Cósmico</div>
+            <div class="des">
+              Tu aliado en el universo del diseño gráfico, ofreciendo servicios
+              profesionales que transforman tus conceptos en soluciones
+              creativas y vibrantes. Cada proyecto es una oportunidad para
+              entregar resultados que no solo son visualmente impactantes, sino
+              también relevantes y atemporales.
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            src="../assets/images/projects/pavito cosmico/02.jpg"
+            alt="Imagen de Pavito Cósmico - 02"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="../assets/images/projects/pavito cosmico/03.jpg"
+            alt="Imagen de Pavito Cósmico - 03"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="../assets/images/projects/pavito cosmico/04.png"
+            alt="Imagen de Pavito Cósmico - 04"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="../assets/images/projects/pavito cosmico/05.jpg"
+            alt="Imagen de Pavito Cósmico - 05"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="../assets/images/projects/pavito cosmico/06.jpg"
+            alt="Imagen de Pavito Cósmico - 06"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="../assets/images/projects/pavito cosmico/07.jpg"
+            alt="Imagen de Pavito Cósmico - 06"
+          />
+        </div>
+      </div>
+      <!-- ------Thumbnail------ -->
+      <div class="thumbnail">
+        <div class="item">
+          <img
+            src="../assets/images/projects/pavito cosmico/02.jpg"
+            alt="Miniatura Pavito Cósmico - 01"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="../assets/images/projects/pavito cosmico/03.jpg"
+            alt="Miniatura Pavito Cósmico - 01"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="../assets/images/projects/pavito cosmico/04.png"
+            alt="Miniatura Pavito Cósmico - 02"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="../assets/images/projects/pavito cosmico/05.jpg"
+            alt="Miniatura Pavito Cósmico - 03"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="../assets/images/projects/pavito cosmico/06.jpg"
+            alt="Miniatura Pavito Cósmico - 04"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="../assets/images/projects/pavito cosmico/07.jpg"
+            alt="Miniatura Pavito Cósmico - 05"
+          />
+        </div>
+        <div class="item">
+          <img
+            src="../assets/images/projects/pavito cosmico/01.jpg"
+            alt="Miniatura Pavito Cósmico - 06"
+          />
+        </div>
+      </div>
+      <!-- ------arrows------ -->
+      <div class="arrows">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+    </div>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname, event) {
+        for (var tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (var tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0px";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

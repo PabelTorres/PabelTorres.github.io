@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pabel Hughes</title>
+    <link rel="stylesheet" href="../assets/css/style.css" />
+    <script
+      src="https://kit.fontawesome.com/6152bc4d0e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- ------Header------ -->
+    <div id="header">
+      <div class="container">
+        <nav>
+          <a href="index.html"
+            ><img id="logo" src="../assets/images/Logo/Logo.png" class="logo"
+          /></a>
+
+          <ul id="sidemenu">
+            <li><a href="../pages/index.html">Principal</a></li>
+            <li><a href="#sobre-mi">Sobre mi</a></li>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <h1>
+            <span class="color1">PORTA</span><span class="color2">FOLIO</span>
+          </h1>
+        </div>
+        <div>
+          <div class="subtitle">
+            <p>Diseñador Gráfico</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="sobre-mi">
+      <div class="container">
+        <div class="row">
+          <div class="sobre-mi-col-1">
+            <img
+              src="../assets/images/designer/profile_b&n_transparent.png"
+              alt=""
+            />
+          </div>
+          <!-- ---------------Sobre-mi----------------- -->
+          <div class="sobre-mi-col-2" id="sobre-mi">
+            <h1 class="subtitle-2">Pabel Torres Hughes</h1>
+            <br />
+            <div class="body-text">
+              <p>
+                Experiencia en diseño de marca, edición de video, ilustración
+                digital, motion graphics, y sólidos conocimientos en HTML y CSS.
+                Me enfoco en desafiar los límites de la creatividad y encontrar
+                soluciones visuales impactantes que cautiven a la audiencia.
+              </p>
+              <div class="tab-titles">
+                <p
+                  class="tab-links active-link"
+                  onclick="opentab('habilidades')"
+                >
+                  Habilidades
+                </p>
+                <p class="tab-links" onclick="opentab('experiencia')">
+                  Experiencia
+                </p>
+                <p class="tab-links" onclick="opentab('educacion')">
+                  Educación
+                </p>
+              </div>
+              <div class="tab-contents active-tab" id="habilidades">
+                <ul>
+                  <li>
+                    <span>Branding</span><br />Diseño de identidades visuales
+                    para empresas, productos o servicio.
+                  </li>
+                  <li>
+                    <span>Motion graphics</span><br />Animaciones hechas para
+                    comunicar mensajes de manera dinámica y atractiva.
+                  </li>
+                  <li>
+                    <span>Edición de video</span><br />Elaboración de videos en
+                    formato corto y largo.
+                  </li>
+
+                  <li>
+                    <span>Ilustración digital</span><br />Elaboración de
+                    imágenes y arte digital en diversos estilos.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="experiencia">
+                <ul>
+                  <li>
+                    <span>Actualmente | Freelancer</span><br />Trabajo
+                    independiente en la creación y desarrollo de marcas, edición
+                    de video, diseño de material promocional y generación de
+                    motion graphics.
+                  </li>
+                  <li>
+                    <span
+                      >2022 - 2023 | Diseñador multimedia <br />
+                      Caasa Hogar Naandi</span
+                    ><br />Creación de materiales visuales que comunican la
+                    misión de la organización, diseñando folletos, carteles y
+                    videos para promover eventos y campañas.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab-contents" id="educacion">
+                <ul>
+                  <li>
+                    <span
+                      >Actualmente | Google Project Management Certificate
+                      <br />
+                      Google</span
+                    ><br />Programa enfocado en adquirir habilidades en la
+                    gestión de riesgos, mejora de procesos, dinámica de equipo,
+                    presupuestos, uso de software y metodología Agile, con
+                    énfasis en Scrum.<br />
+                  </li>
+                  <li>
+                    <span
+                      >2023 | Scrum Fundamentals Certified <br />
+                      SCRUMstudy</span
+                    ><br />Certificación diseñada para aprender sobre los
+                    conceptos clave de Scrum y obtener una comprensión de cómo
+                    se aplica en la entrega de proyectos exitosos.
+                  </li>
+                  <li>
+                    <span
+                      >2019 - 2022 | Diseño para la Comunicación Gráfica <br />
+                      Universidad de Guadalajara </span
+                    ><br />Licenciatura que se enfoca en identificar y resolver
+                    problemas de comunicación a través de mensajes y estrategias
+                    aplicadas a diversos medios visuales.
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------Servicios----------------- -->
+    <div id="servicios">
+      <div class="container">
+        <h1 class="subtitle-2">Servicios</h1>
+        <div class="servicios-list">
+          <div class="servicio">
+            <i class="fa-solid fa-pen-nib"></i>
+            <h2>Diseño de Marca</h2>
+          </div>
+          <div class="servicio">
+            <i class="fa-solid fa-eye"></i>
+            <h2>Animación de Marca</h2>
+          </div>
+          <div class="servicio">
+            <i class="fa-solid fa-photo-film"></i>
+            <h2>Edición de Video</h2>
+          </div>
+          <div class="servicio">
+            <i class="fa-solid fa-palette"></i>
+            <h2>Ilustración Digital</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ----------Portafolio----------- -->
+    <div id="portafolio">
+      <div class="container">
+        <h1 class="subtitle-2">Portafolio</h1>
+        <div class="lista-de-trabajos">
+          <div class="trabajo">
+            <a href="../pages/ronronnette.html"
+              ><img
+                src="../assets/images/projects/ronronnette/Presentation Square Format-01.jpg"
+                alt=""
+            /></a>
+          </div>
+          <div class="trabajo">
+            <a href="../pages/g&a.html"
+              ><img src="../assets/images/projects/g&a/Asset 16-100.jpg" alt=""
+            /></a>
+          </div>
+          <div class="trabajo">
+            <a href="../pages/pavito-cosmico.html"
+              ><img
+                src="../assets/images/projects/pavito cosmico/Asset 65-100.jpg"
+                alt=""
+            /></a>
+          </div>
+          <div class="trabajo">
+            <a href="../pages/whoosh.html"
+              ><img
+                src="../assets/images/projects/whoosh/Asset 24-100.jpg"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------Contacto----------------- -->
+    <div id="contacto">
+      <div class="container">
+        <div class="row">
+          <div class="contacto-izquierda">
+            <h1 class="subtitle-2">Contacto</h1>
+            <p><i class="fa-solid fa-envelope"></i> hughes.pabel@gmail.com</p>
+            <p><i class="fa-solid fa-mobile"></i> +52 33 2251 4616</p>
+            <div class="social-icons">
+              <a href="https://www.linkedin.com/in/pabel-hughes/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://www.behance.net/Pabel_Hughes"
+                ><i class="fa-brands fa-square-behance"></i
+              ></a>
+              <a href="https://www.instagram.com/pabel_hughes/"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              <a href="https://github.com/PabelTorres"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </div>
+            <a
+              href="../downloads/Pabel Torres Hughes CV [ENG].pdf"
+              download
+              class="btn btn2"
+              >Descargar CV</a
+            >
+          </div>
+          <div class="contacto-derecha">
+            <form
+              action="https://formsubmit.co/9ffb4f2d4e0d751a681530a56666818c"
+              method="POST"
+            >
+              <input type="text" name="Name" placeholder="Nombre" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Correo electrónico"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Mensaje"
+              ></textarea>
+              <button type="submit" class="btn btn2">Enviar</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../assets/js/script.js"></script>
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0px";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
